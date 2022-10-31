@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//fgp.one/fa4.css?2210_1" />
+    <!-- <link rel="stylesheet" href="//asset.com/fa4.7/css/font-awesome.min.css?2210_1" /> -->
+    <link rel="stylesheet" href="style.css?2210_1" />
+    <link rel="stylesheet" href="style/navbar.css?2210_1" />
+    <link rel="stylesheet" href="style/main-hero.css?2210_1" />
+    <link rel="stylesheet" href="style/main.css?2210_1" />
+    <title>ICB Casa de Misericordia</title>
+  </head>
+  <body>
+    <header>
+      <section class="navbar">
+        <a href="/"><img src="img/logo-de-icb.png" alt="" /></a>
+        <div class="btn-container">
+          <i class="fa fa-bars" onclick="fa_btn()"></i>
+        </div>
+        <!-- <i class="fa fa-times"></i> -->
+        <script>
+          function fa_btn() {
+            let _fa = document.querySelector(".fa");
+            let nav = document.querySelector("nav");
+            _fa.classList.toggle("fgp-times");
+            nav.classList.toggle("d-block");
+          }
+        </script>
+        <nav>
+          <!-- <nav class="d-block"> -->
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nuestra Iglesia</a></li>
+            <li><a href="#">En Que Creemos</a></li>
+            <li><a href="#">Horarios</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="title">
+          <h1>ICB Casa De Misericordia</h1>
+          <p>Te estamos esperando hay un lugar para ti</p>
+        </div>
+      </section>
+      <section class="our-purpose">
+        <h2>NUESTRO PROPÓSITO ES</h2>
+        <ul>
+          <li>Atraer</li>
+          <li>Plantar</li>
+          <li>Discipular</li>
+          <li>Servir</li>
+          <li>Adorar</li>
+        </ul>
+      </section>
+      <section class="about">
+        <div class="box content">
+          <h2>UNA IGLESIA DE IMPACTO QUE LEVANTA SUS MANOS Y RINDE SU CORAZÓN PARA ADORAR AL DIOS VIVO</h2>
+          <p>Somos una iglesia que anhela a Dios y hacerlo sonreír, amamos su casa y como árboles que dan fruto estamos plantados en ella, nos comprometemos con su reino y a darlo todo, aun nuestra propia vida, por su causa.</p>
+        </div>
+        <div class="box">
+          <img src="img/icb-about.jpg" alt="" />
+        </div>
+      </section>
+      <section class="our-schedules">
+        <h2>NUESTROS HORARIOS</h2>
+        <table>
+          <tr>
+            <th>Reunion</th>
+            <th>Horarios</th>
+          </tr>
+          <tr>
+            <td>Culto General</td>
+            <td>Domingo 4pm</td>
+          </tr>
+          <tr>
+            <td>Doctrina</td>
+            <td>Martes 7pm</td>
+          </tr>
+          <tr>
+            <td>GCF</td>
+            <td>Jueves 8pm</td>
+          </tr>
+          <tr>
+            <td>Oracion</td>
+            <td>lunes, miercoles, viernes 6am</td>
+          </tr>
+        </table>
+      </section>
+      <section class="pastors">
+        <h2>Pastores</h2>
+        <p>Prs. Marlon y Jacky Arias</p>
+        <div class="box">
+          <img src="img/pastores.jpg" alt="" />
+          <p>Andrés y Rocío Corson son los pastores y fundadores de la iglesia El Lugar de Su Presencia; juntos son adoradores y buscadores incansables de la presencia de Dios</p>
+          <a href="//fb.com/maritzajacqueline.carrillogoycochea" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i> Ps Jackie</a>
+          <a href="//fb.com/marlonesteven.ariasbarrera" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i> Ps Marlon</a>
+        </div>
+      </section>
+      <section class="parallax"></section>
+      <section class="contact">
+        <h3>Ubicanos en Av. Tomas Valle 1177 - Dto. SMP. paradero poste.</h3>
+        <picture onclick="window.open('//goo.gl/maps/rtpi4h5FTqcr7dPZ8','_blank');">
+          <source media="(max-width: 50rem)" srcset="img/maps-mobile.png" />
+          <source media="(min-width: 50rem)" srcset="img/maps.png" />
+          <img src="img/maps.png" alt="maps" class="onclick" />
+        </picture>
+
+        <h3>Siguenos en nuestras Redes Sociales</h3>
+        <div class="icons">
+          <a href="//fb.com/ICBCasadeMisericordia" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+          <a href="//youtube.com/ICBCasadeMisericordia" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

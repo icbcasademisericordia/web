@@ -1,0 +1,85 @@
+.navbar {
+  background-color: #fff;
+  /* color: white; */
+  padding: 1vh 10vw;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 5rem;
+  box-shadow: 0 0 1em 0em #0008;
+  text-align: left;
+  z-index: 1;
+}
+.navbar img {
+  width: 4rem;
+  /* display: block; */
+}
+.navbar h2 {
+  margin: 0;
+}
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar ul {
+  padding: 1em;
+  margin: 0;
+}
+.navbar li {
+  list-style: none;
+  /* border-bottom: 1px solid; */
+  padding-bottom: 0.2em;
+  /* margin: 0 1em; */
+}
+.navbar li:hover {
+  color: indianred;
+}
+
+/* ========== desktop... ========== */
+@media (min-width: 50rem) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vh;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 1em;
+  }
+  .navbar .fa {
+    display: none;
+  }
+}
+/* ========== desktop. ========== */
+
+/* ========== mobile... ========== */
+@media (max-width: 50rem) {
+  .navbar .btn-container {
+    position: relative;
+  }
+  .navbar nav {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+  .navbar .fa {
+    position: absolute;
+    transform: translateY(-150%);
+    right: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .navbar .d-block {
+    display: block;
+  }
+  .navbar li {
+    line-height: 1.7em;
+  }
+  .fgp-times:before {
+    content: "\f00d";
+  }
+}
+/* ========== mobile. ========== */

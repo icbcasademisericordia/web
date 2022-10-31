@@ -1,0 +1,164 @@
+main .our-purpose * {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+}
+main .our-purpose {
+  padding: 5em 0;
+}
+main .our-purpose ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1em;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+/* ========== .about... ========== */
+main .about {
+  /* background-color: #FEFF9D; */
+  background-color: #830000;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+main .about .content {
+  /* max-width: 55ch; */
+  padding: 0 10vw;
+}
+main .about .box {
+  flex: 1 1 30rem;
+}
+/* ========== .about. ========== */
+
+/* ========== .our-schedules... ========== */
+main .our-schedules {
+  padding: 3em;
+}
+main .our-schedules table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+main .our-schedules td,
+main .our-schedules th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+main .our-schedules tr:nth-child(even) {
+  background-color: #ddd;
+}
+/* ========== .our-schedules. ========== */
+
+/* ========== .pastors... ========== */
+main .pastors {
+  background-color: #830000;
+  color: white;
+  padding: 2em;
+}
+main .pastors img {
+  object-fit: cover;
+  /* object-position: center; */
+  object-position: 25% 40%;
+  height: 70vh;
+}
+main .pastors a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  /* font-size: 2em; */
+  margin: 1em 2em;
+}
+
+main .pastors .fa {
+  /* color: white; */
+  border: 1px solid;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+main .pastors .fa:hover {
+  background-color: #fff8;
+}
+main .pastors a:hover {
+  text-decoration: underline;
+}
+/* ========== .pastors. ========== */
+
+/* ========== @media Desktop... ========== */
+@media (min-width: 50rem) {
+  main .pastors .box {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+/* ========== @media Desktop. ========== */
+
+main .parallax {
+  background-image: url(../img/icb-hero.jpg);
+  min-height: 70vh;
+  /* background-attachment: fixed; */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .preaching {
+  padding: 2em;
+}
+main .preaching .playlist {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .map {
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+main .map h2 {
+  /* padding: 0 10em; */
+  max-width: 25ch;
+}
+main .map:nth-child(1n) {
+  flex: 1 1 50%;
+}
+main .contact {
+  background-color: #333;
+  color: white;
+  padding: 2em 0;
+}
+
+main .contact .fa {
+  color: white;
+  padding: 1em;
+  border: 1px solid;
+  margin: 2em;
+  display: inline-block;
+}
+main .contact .fa:hover {
+  background-color: #fff4;
+}
+main .contact .onclick:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: all .3s ease;
+}
+@media (min-width: 50rem) {
+  main .contact {
+    /* padding: 2rem 0; */
+  }
+  main .contact img {
+    max-width: 50rem;
+  }
+}
